@@ -1,0 +1,102 @@
+body {
+     background: #43519ce8;
+}
+ table {
+     border-collapse: collapse;
+     background: #fff;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+ .table-titles {
+     background-color: #a24f80;
+     background-image: linear-gradient(to top, #a24f80, #52588e87);
+}
+ .table-titles-inner {
+     height: 3.2rem;
+}
+ .table-titles-inner th {
+     font-family: sans-serif;
+     color: #fff;
+     font-size: 13px;
+     font-weight: 400;
+}
+ .user-column {
+     min-width: 20rem;
+     text-align: left;
+     padding-left: 1rem;
+     cursor: pointer;
+}
+ .middle-column {
+     min-width: 10rem;
+     text-align: left;
+     cursor: pointer;
+}
+ .right-column {
+     min-width: 6rem;
+     text-align: center;
+     cursor: pointer;
+}
+ .righ-column-child {
+     text-align: center;
+}
+ .data-change-sub{
+     background: #a24f80;
+     position: absolute;
+     top: 50px;
+}
+ .data-change-sub {
+     display: none;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
+}
+ .data-change-sub li {
+     text-align: left;
+     list-style: none;
+     margin-left: -2.3rem;
+     padding: 0.7rem;
+}
+ .data-change-sub li span {
+     margin-left: 1rem;
+     padding-left: 2rem;
+     float: right;
+}
+ .user-column ul li:hover ul {
+     display: block;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
+}
+ .middle-column ul li:hover ul {
+     display: block;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
+}
+ .right-column ul li:hover ul {
+     display: block;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
+}
+ .data-change-sub, .sub-submenu{
+     position: absolute;
+     margin-top: 0.5rem;
+     background: #a24f80;
+     width:150px;
+     display: none;
+}
+ .submenu li {
+     width: 100%;
+}
+ .sub-submenu {
+     margin-top: -1.5rem;
+     margin-left: 11rem;
+}
+ tbody tr td {
+     padding: 0.5rem;
+     border-bottom: 1px solid #9e9e9e91;
+     font-size: 13px;
+     color: #545151;
+     font-family: sans-serif;
+}
+ td i {
+     margin-left: 1rem;
+}
+ .date-column {
+     padding-left: 2rem;
+}
+ .check-box {
+     margin-right: 0.6rem;
+}

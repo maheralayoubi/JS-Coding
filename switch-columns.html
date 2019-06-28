@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Switching Columns</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <table id="table-main">
+    <thead class="table-titles">
+      <tr class="table-titles-inner">
+        <th class="user-column js-hasSubmenu" id="thead_user_id"><span>User ID</span>
+           <ul class="data-change-sub js-submenu" id="thead_user_sub">
+            <li>Sort Columns</li>
+            <li>Change Data <span>&#x25B6;</span>
+                <ul class=sub-submenu>
+                  <li>User ID (default)</li>
+                  <li onclick="switchData('thead_user_id', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                  <li onclick="switchData('thead_user_id', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+                </ul>
+              </li>
+            </ul>
+        </th>
+        <th class="middle-column js-hasSubmenu" id="thead_family_name"><span>Family Name</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>Family Name (default)</li>
+                 <li onclick="switchData('thead_family_name', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_family_name', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+        <th class="middle-column js-hasSubmenu" id="thead_given_name"><span>Given Name</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>Given Name (default)</li>
+                 <li onclick="switchData('thead_given_name', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_given_name', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+        <th class="middle-column js-hasSubmenu" id="thead_user_name"><span>User Name</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>User Name (default)</li>
+                 <li onclick="switchData('thead_user_name', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_user_name', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+        <th class="right-column js-hasSubmenu" id="thead_programs"><span>Programs</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>Programs (default)</li>
+                 <li onclick="switchData('thead_programs', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_programs', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+        <th class="right-column js-hasSubmenu" id="thead_status"><span>Status</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>Status (default)</li>
+                 <li onclick="switchData('thead_status', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_status', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+        <th class="right-column js-hasSubmenu" id="thead_avg_session"><span>Avg. Session</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>Avg. Session (default)</li>
+                 <li onclick="switchData('thead_avg_session', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_avg_session', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+        <th class="right-column js-hasSubmenu" id="thead_last_active"><span>Last Active</span>
+          <ul class="data-change-sub js-submenu">
+           <li>Sort Columns</li>
+           <li>Change Data <span>&#x25B6;</span>
+               <ul class="sub-submenu">
+                 <li>Last Active (default)</li>
+                 <li onclick="switchData('thead_last_active', this, 'custom', 0)" class="js-submenu-nav">Custom Field 1</li>
+                 <li onclick="switchData('thead_last_active', this, 'custom', 1)" class="js-submenu-nav">Custom Field 2</li>
+               </ul>
+             </li>
+           </ul>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" class="check-box">0c32f834a7@example.edu</td>
+        <td>Rutherford</td>
+        <td>Kayleigh</td>
+        <td>KabeRuth</td>
+        <td class="righ-column-child">2</td>
+        <td class="righ-column-child">Active</td>
+        <td class="righ-column-child">0:00</td>
+        <td class="righ-column-child date-column">2018-08-17<i class="fa fa-angle-right" style="font-size:20px; font-weight: 900;"></i></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="check-box">8667ffbf61@example.edu</td>
+        <td>Pouros</td>
+        <td>Selina</td>
+        <td>Pou</td>
+        <td class="righ-column-child">1</td>
+        <td class="righ-column-child">Active</td>
+        <td class="righ-column-child">0:02</td>
+        <td class="righ-column-child date-column">2017-09-15<i class="fa fa-angle-right" style="font-size:20px; font-weight: 900;"></i></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="check-box">b9067a5741@example.edu</td>
+        <td>Hyatt</td>
+        <td>Miracle</td>
+        <td>Kiseki</td>
+        <td class="righ-column-child">1</td>
+        <td class="righ-column-child">Active</td>
+        <td class="righ-column-child">0:03</td>
+        <td class="righ-column-child date-column">2017-09-15<i class="fa fa-angle-right" style="font-size:20px; font-weight: 900;"></i></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>
